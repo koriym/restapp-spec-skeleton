@@ -1,0 +1,24 @@
+{
+  "$id": "link.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HAL Link Object",
+  "description": "A Link Object represents a hyperlink from the containing resource to a URI.",
+  "type": "object",
+  "required": [
+    "href"
+  ],
+  "properties": {
+    "href": {
+      "description": "Its value is either a URI [RFC3986] or a URI Template [RFC6570]. If the value is a URI Template then the Link Object SHOULD have a \"templated\" attribute whose value is true.",
+      "type": "string"
+    },
+    "templated": {
+      "description": "Its value is boolean and SHOULD be true when the Link Object's \"href\" property is a URI Template. Its value SHOULD be considered false if it is undefined or any other value than true.",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "Its value is a string and is intended for labelling the link with a human-readable identifier (as defined by [RFC5988]).",
+      "type": "string"
+    }
+  }
+}

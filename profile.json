@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/koriym/spec/schema/schemas/alps.json",
+  "alps": {
+    "doc": {
+      "value": "ALPS Profile"
+    },
+    "version": "1.0",
+    "descriptor": [
+    ]
+  }
+}
