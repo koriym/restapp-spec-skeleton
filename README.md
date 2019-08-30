@@ -4,9 +4,10 @@
 
  * [Application state diagram](./application-state-diagram/README.md)
  * [Profile (RFC6906)](./profile.json)
- * [Semantic schema](./schema/semantic/)
-  * [Semantic Fake JSON](./fake/semantic)
- * [Relation schema](./schema/rel/)
+ * Schema
+   * [Semantic schema](./schema/semantic/)
+   * [Relation schema](./schema/rel/)
+   * [Fake Semantic JSON](./fake/semantic)
  
 ### Fake JSON
 
