@@ -1,12 +1,12 @@
-# RESTApp Spec Skeleton
+# REST Application Design Skeleton
 
 ## Specs
 
+ * [Application state diagram](./application-state-diagram/README.md)
  * [Profile (RFC6906)](./profile.json)
-   * [Application state diagram](./application-state-diagram/README.md)
-   * [Semantic schema](./schema/semantic/)
-     * [Semantic Fake JSON](./fake/semantic)
-   * [Relation schema](./schema/rel/)
+ * [Semantic schema](./schema/semantic/)
+  * [Semantic Fake JSON](./fake/semantic)
+ * [Relation schema](./schema/rel/)
  
 ### Fake JSON
 
