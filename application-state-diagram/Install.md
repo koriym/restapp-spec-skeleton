@@ -4,6 +4,6 @@
 2. Run `make`
 
 ```
-brew install
+brew install graphviz
 make
 ```
