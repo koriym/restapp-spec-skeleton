@@ -4,7 +4,19 @@ digraph application_state_diagram {
       style = "bold,filled"
     ];
 
-    Index->Blog [
+    Index -> Blog [
         label = "blog (safe)"
+    ];
+    Blog -> BlogPosting [
+        label = "blogPost (safe)"
+    ];
+    BlogPosting -> Blog [
+        label = "collection (safe)"
+    ];
+    Blog -> Blog [
+        label = "post (unsafe)"
+    ];
+    Blog -> About [
+        label = "about (safe)"
     ];
 }
