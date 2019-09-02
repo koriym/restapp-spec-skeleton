@@ -25,4 +25,5 @@ composer fake
  * [IANA link relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
  * [microformats rel values](http://microformats.org/wiki/existing-rel-values)
  * [JSON Schema](https://json-schema.org/)
+ * [JSON Schema Form](https://github.com/mozilla-services/react-jsonschema-form)
  
