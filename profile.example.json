@@ -7,6 +7,16 @@
     "version": "0.1",
     "descriptor": [
       {
+        "id": "Index",
+        "type": "semantic",
+        "descriptor": [{
+          "doc": {
+            "value": "index page"
+          }
+        }
+        ]
+      },
+      {
         "id": "About",
         "type": "semantic",
         "def": "https://www.iana.org/assignments/link-relations/link-relations.xhtml"
@@ -15,23 +25,15 @@
         "id": "Blog",
         "type": "semantic",
         "def": "https://schema.org/Blog",
+        "doc": {
+          "value": "blog entry list page"
+        },
         "descriptor": [
           {
             "id": "blogPost",
             "type": "semantic",
             "def": "https://schema.org/blogPost",
             "rt": "#BlogPosting"
-          },
-          {
-            "id": "item",
-            "type": "semantic",
-            "def": "https://www.iana.org/assignments/link-relations/link-relations.xhtml",
-            "rt": "#BlogPosting"
-          },
-          {
-            "id": "post",
-            "type": "unsafe",
-            "def": "http://wiki.activitystrea.ms/w/page/23273671/Post"
           }
         ]
       },
@@ -51,6 +53,49 @@
             "def": "https://schema.org/BlogPosting#dateCreated"
           }
         ]
+      },
+      {
+        "id": "blog",
+        "type": "safe",
+        "doc": {
+          "value": "to blog page"
+        },
+        "rt": "Blog"
+      },
+      {
+        "id": "post",
+        "type": "unsafe",
+        "doc": {
+          "value": "Post blog entry"
+        },
+        "descriptor": [
+          {"href": "#articleBody"}
+        ],
+        "rt": "Blog"
+      },
+      {
+        "id": "blogPost",
+        "type": "safe",
+        "doc": {
+          "value": "to blog entry"
+        },
+        "descriptor": [
+          {
+            "href": "#blogId"
+          }
+        ]
+      },
+      {
+        "id": "collection",
+        "type": "safe",
+        "def": "https://www.iana.org/assignments/link-relations/link-relations.xhtml"
+      },
+      {
+        "id": "about",
+        "type": "semantic",
+        "doc": {
+          "value": "to About page"
+        }
       }
     ]
   }
