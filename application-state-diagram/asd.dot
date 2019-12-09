@@ -8,10 +8,10 @@ digraph application_state_diagram {
         label = "blog (safe)"
     ];
     Blog -> BlogPosting [
-        label = "blogPost (safe)"
+        label = "blog_posting, item (safe)"
     ];
     BlogPosting -> Blog [
-        label = "collection (safe)"
+        label = "blog, collection (safe)"
     ];
     Blog -> Blog [
         label = "post (unsafe)"
