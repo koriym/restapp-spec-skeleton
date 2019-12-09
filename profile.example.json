@@ -32,7 +32,10 @@
           {
             "id": "blogPosting",
             "type": "safe",
-            "rt": "#BlogPosting"
+            "rt": "#BlogPosting",
+            "descriptor": [
+              {"href": "#id"}
+            ]
           },
           {
             "id": "item",
@@ -63,6 +66,13 @@
           "value": "Blog entry item page"
         },
         "descriptor": [
+          {
+            "id": "id",
+            "type": "semantic",
+            "doc": {
+              "value": "Blog entry id"
+            }
+          },
           {
             "id": "articleBody",
             "type": "semantic",
