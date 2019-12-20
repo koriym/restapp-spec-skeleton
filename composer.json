@@ -3,8 +3,9 @@
     "description": "REST application specification",
     "type": "project",
     "require-dev": {
-        "ext-json": "^1.0",
-        "koriym/json-schema-faker": "^0.1"
+        "ext-json": "*",
+        "koriym/json-schema-faker": "^0.1",
+        "koriym/app-state-diagram": "dev-master"
     },
     "license": "proprietary",
     "minimum-stability": "dev",
