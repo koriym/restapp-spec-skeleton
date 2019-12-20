@@ -18,7 +18,7 @@
 
 ### ASD
 
-Generate application state diagram.
+Generate an application state diagram.
 
 ```
 composer asd
