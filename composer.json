@@ -11,6 +11,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "asd" : [
+            "./vendor/bin/asd ./profile/profile.json && dot -Tpng ./profile/profile.dot -o ./profile/profile.png"
+        ],
+        "asd:example" : [
+            "./vendor/bin/asd ./profile/profile.example.json && dot -Tpng ./profile/profile.example.dot -o ./profile/profile.example.png"
+        ],
         "fake": [
             "php bin/fake.php"
         ]
