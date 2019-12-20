@@ -1,13 +1,28 @@
-# REST Application Design Skeleton
+# REST Application Spec Skeleton
 
 ## Specs
 
- * [Application state diagram](./application-state-diagram/README.md)
- * [Profile (RFC6906)](./profile.json)
+ * [Profile (RFC6906)](./profile/profile.json)
  * Schema
    * [Semantic schema](./schema/semantic/)
    * [Relation schema](./schema/rel/)
    * [Fake Semantic JSON](./fake/semantic)
+
+## Application State Diagram
+
+![Application state diagram](./profile/profile.png)
+
+[profile.png](./profile/profile.png)
+ 
+## Scripts
+
+### ASD
+
+Generate application state diagram.
+
+```
+composer asd
+```
  
 ### Fake JSON
 
